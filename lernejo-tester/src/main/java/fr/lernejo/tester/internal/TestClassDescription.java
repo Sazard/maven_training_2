@@ -23,7 +23,7 @@ public class TestClassDescription {
             Method[] m = test.getDeclaredMethods();
             for(Method met : m){
                 if(Modifier.isPublic(met.getModifiers())){
-                    if(met.isAnnotationPresent(TestMethod.class)) {
+                    if(!Modifier.isStatic(met.getModifiers())) {
                         if (met.getParameterCount() == 0) {
                             if (met.getGenericReturnType() == void.class) {
                                 l.add(met);

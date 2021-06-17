@@ -12,6 +12,16 @@
     <modules>
         <module>lernejo-tester</module>
     </modules>
+
+    <profiles>
+        <profile>
+            <id>with-tests</id>
+            <modules>
+                <module>sample</module>
+            </modules>
+        </profile>
+    </profiles>
+    <!--
     <dependencies>
         <dependency>
             <groupId>fr.lernejo</groupId>
@@ -27,27 +37,22 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-    <profiles>
-        <profile>
-            <id>with-tests</id>
-            <modules>
-                <module>sample</module>
-            </modules>
-        </profile>
-    </profiles>
+    -->
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
     </properties>
-    <dependencyManagement>  <!--(1)-->
+    <!--
+    <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>org.reflections</groupId>
                 <artifactId>reflections</artifactId>
-                <version>3.0.2-RC1-bin-20210613-b7aae46-NIGHTLY</version>
+                <version>0.9.12</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
+    -->
 
 
 </project>

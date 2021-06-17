@@ -9,5 +9,4 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD) // (2)
 
 public @interface TestMethod {
-
 }
